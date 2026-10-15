@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "status",
+    "target_seconds",
+    "narration",
+    "words_per_minute",
+    "pause_seconds",
+    "scenes",
+    "materials",
+    "claims",
+    "sources",
+    "production_tasks",
+    "constraints",
+    "audit"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "PROVISIONAL",
+        "PLANNED",
+        "EDIT READY"
+      ]
+    },
+    "target_seconds": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "narration": {
+      "type": "string",
+      "minLength": 1
+    },
+    "words_per_minute": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "pause_seconds": {
+      "type": "number",
+      "minimum": 0
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "start",
+          "end",
+          "voice_text",
+          "visual",
+          "material_ids"
+        ]
+      }
+    },
+    "materials": {
+      "type": "array"
+    },
+    "claims": {
+      "type": "array"
+    },
+    "sources": {
+      "type": "array"
+    },
+    "production_tasks": {
+      "type": "array"
+    },
+    "constraints": {
+      "type": "object"
+    },
+    "audit": {
+      "type": "array"
+    }
+  }
+}

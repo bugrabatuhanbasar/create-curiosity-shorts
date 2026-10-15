@@ -1,0 +1,4 @@
+interface:
+  display_name: "Merak Shorts Üretimi"
+  short_description: "Konudan kaynaklı ve uygulanabilir Shorts kurgusuna"
+  default_prompt: "Use $create-curiosity-shorts to prepare a complete sourced Shorts production package for my topic."

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "curiosity-shorts-kit",
+  "version": "1.0.1",
+  "description": "Source-backed real-footage-first Shorts planning workflow."
+}

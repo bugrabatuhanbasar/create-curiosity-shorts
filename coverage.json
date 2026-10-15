@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "source_document": "production-handbook-v2.docx",
+  "source_sha256": "45238c472ac116ea6d85c83b46af136f0bbd1a6ed26e99c1fe8d90eb5af0409f",
+  "paragraphs_preserved": 364,
+  "table_cells_preserved": 190,
+  "tables_preserved": 11,
+  "conversion": "All nonempty body paragraphs and all table cell text, document order; formatting/page breaks not retained in Markdown; original DOCX retained."
+}
